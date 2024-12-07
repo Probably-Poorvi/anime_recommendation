@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - SQLALCHEMY_DATABASE_URL=postgresql://postgres:3010@localhost:5433/anime_db
